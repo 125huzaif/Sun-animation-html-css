@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+.maindiv{
+margin:0px;
+padding:0px;
+
+}
+body{
+
+height:350px;
+background:linear-gradient(180deg,#c712fb,#f74545);
+animation:night 5s linear infinite;
+text-align:left-side;
+}
+
+#sun {
+
+
+background:linear-gradient(60deg,yellow,red);
+height:100px;
+width:100px;
+border-radius:50px;
+margin-left:570px;
+top:200px;
+position:absolute;
+animation: sun 5s alternate-reverse linear infinite;
+}
+
+#water{
+background:linear-gradient(60deg,#5fd3da,#23309e);
+height:250px;
+width: 1400px;
+position:relative;
+top:360px;
+bottom:0px;
+}
+
+@keyframes sun{
+
+ 0% 80% 100%{
+         margin:0 0;
+		 top:264px;
+		 left:45%;
+
+ }
+
+
+50%{
+margin: 0 0;
+top:100%;
+left:45%;
+
+}
+}		
+
+@keyframes night{
+ 0% 80% 100% {
+    background:linear-gradient(60deg,#c712fb,#f74545)  }
+
+ 50%{
+ background:linear-gradient(60deg,#060431,#a329b1)
+ }
+
+}
+</style>
+</head>
+<body>
+
+<div id="sun"> </div>
+<h1> Day night shifting </h2>
+<div id="water"> </div>
+</body>
+</html>
